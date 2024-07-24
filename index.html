@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Page avec Header et Footer</title>
+  <!-- Styles Bootstrap -->
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <!-- Votre propre fichier CSS (si nécessaire) -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- Contenu du header -->
+<div id="header"></div>
+
+<!-- Contenu principal de la page -->
+<div class="container">
+  <h1>Contenu principal de la page</h1>
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque, corrupti rem. Illum iure autem cupiditate, molestiae, quod ea quos nesciunt mollitia porro in dolor ab! Adipisci quaerat amet qui, omnis repellat ipsa tenetur odio expedita corporis quod doloremque eaque, id non maxime cumque hic alias quasi minima rem accusantium? Nulla vel illum consequatur rerum possimus quidem exercitationem tenetur rem odit suscipit? Unde voluptas expedita quaerat itaque assumenda laudantium maxime at officiis, voluptatum inventore aspernatur perspiciatis quasi. Fuga assumenda distinctio accusantium voluptate tempora. Aliquam, non. Voluptas ad voluptatem asperiores facere expedita molestiae recusandae? Architecto necessitatibus voluptatum laboriosam enim ducimus recusandae sint!</p>
+
+
+
+
+  <h2>Contenu principal de la page</h2>
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum ratione qui nulla provident optio expedita, nihil adipisci natus molestiae accusamus facilis atque amet animi quis a tenetur non, sed id iure, nemo quisquam tempore voluptatibus? Id assumenda deserunt in quia quam neque a aperiam vel. Sed unde iusto animi. Enim.</p>
+
+
+
+
+  <h4>Contenu principal de la page</h4>
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus, accusantium repellendus incidunt perferendis quod dolore. Maiores natus veniam atque exercitationem alias sapiente, necessitatibus, id consequuntur voluptatem fuga voluptas, soluta quidem reiciendis suscipit. Minima dolorem amet quidem voluptates modi tempora debitis, suscipit repudiandae asperiores, fugiat animi libero, reprehenderit soluta iure molestiae!</p>
+
+
+
+  <h4>Contenu principal de la page</h4>
+  <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ducimus commodi necessitatibus veritatis alias odio nostrum asperiores veniam accusantium, tempora, beatae reprehenderit vitae minima aut. Molestiae labore officiis alias architecto assumenda incidunt commodi, ducimus soluta vero debitis reprehenderit odit numquam. Fugit ipsa suscipit hic, sed natus similique accusamus, cum impedit assumenda doloremque laborum, aliquid ipsum. Suscipit exercitationem quis maiores nostrum autem delectus, assumenda voluptatem laudantium pariatur tempora eius accusantium corrupti. Voluptatum voluptatibus eaque dicta? Temporibus deserunt fugit odio? Dolore beatae expedita doloribus reiciendis nihil. Maiores beatae ea obcaecati porro facere, cum dolorem, ducimus libero expedita totam sit velit magni! Tempora, non.</p>
+</div>
+
+<!-- Contenu du footer -->
+<div id="footer"></div>
+
+<!-- JavaScript Bootstrap -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@1.16.1/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<!-- Votre propre fichier JavaScript (si nécessaire) -->
+<script src="script.js"></script>
+
+<!-- Script pour charger le header et le footer -->
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    // Charger le header
+    fetch('header.html')
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById('header').innerHTML = data;
+      });
+
+    // Charger le footer
+    fetch('footer.html')
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById('footer').innerHTML = data;
+      });
+  });
+</script>
+
+</body>
+</html>
