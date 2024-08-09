@@ -5,7 +5,7 @@
 
 
 :root{
-    --primary-color : #764c29;
+    --primary-color : rgb(118, 76, 41);
     --secondary-color: #a97b50;
     --text-color: #3d3d3d;
     --hover-color:#c2b59b;
@@ -102,5 +102,21 @@ h6, .h6{
     bottom: auto;
     width: 60px;
     height: 60px;
+    background-color: var(--primary-color);
 
 }
+
+
+#carouselTeamChef .carousel-control-next,#carouselTeamChef .carousel-control-prev {
+    top: auto;
+    bottom: 70px;}
+
+#carouselTeamChef .carousel-control-prev {
+        left: 45%;
+        transform: translateX(-50%);
+    }
+#carouselTeamChef .carousel-control-next{
+        right: 45%;
+        transform: translateX(-50%);    }
+
+
